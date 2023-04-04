@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management CRUD</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="inner-container">
+            <div class="form">
+                <h1>Student Management CRUD</h1>
+                <div class="input-box-container">
+                    <div class="input-box">
+                        <input type="text" id="name" placeholder="Name">
+                    </div>
+                    <div class="input-box">
+                        <input type="email" id="email" placeholder="Email">
+                    </div>
+                    <div class="input-box">
+                        <input type="number" id="gpa" placeholder="GPA">
+                    </div>
+                    <div class="input-box">
+                        <input type="number" id="age" placeholder="Age">
+                    </div>
+                    <div class="input-box">
+                        <input type="text" id="degree" placeholder="Degree">
+                    </div>
+                </div>
+                <button type="submit" id="btn">Add student</button>
+            </div>
+
+            <div class="search">
+                <input id="search" type="text" id="gpa" placeholder="Search by Name, email and degree">
+            </div>
+
+            <div class="table" id="books">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>
+                                ID
+                            </th>
+                            <th>
+                                Student Name
+                            </th>
+                            <th>
+                                Email
+                            </th>
+                            <th>
+                                Age
+                            </th>
+                            <th>
+                                GPA
+                            </th>
+                            <th>
+                                Degree
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="empty-td">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </div>
+
+</body>
+
+</html>
